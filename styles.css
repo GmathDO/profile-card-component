@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Kumbh Sans", sans-serif;
+    font-size: 15px;
+    background: url(images/bg-pattern-top.svg), url(images/bg-pattern-bottom.svg);
+    background-color: hsl(185, 75%, 39%);
+    background-position: right 51vw bottom 20vh, left 45vw top 50vh;
+    background-repeat: no-repeat, no-repeat;
+}
+
+/*-------------------------Card-container-------------------------*/
+.card-container{
+    margin: 145px auto;
+    width: 326px;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    background-color: white;
+    box-shadow: 0px 5px 20px hsl(227, 10%, 46%);
+}
+
+/*-------------------------Card-header-------------------------*/
+.portada{
+    background: url(images/bg-pattern-card.svg);
+    height: 140px;
+}
+
+.profile{
+    position: absolute;
+    top: 87px;
+    margin: 0 35%;
+    border-radius: 50%;
+    border: 5px solid white;
+}
+
+/*-------------------------Card-body-------------------------*/
+.card-body{
+    margin-top: 64px;
+    text-align: center;
+    height: 80px;
+}
+
+.location{
+    margin-top: 10px;
+}
+
+/*-------------------------Card-footer-------------------------*/
+.card-footer{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    border-top: 0.5px solid hsl(0, 0%, 59%);
+    height: 90px;
+}
+
+.numbers{
+    margin-bottom: 10px;
+}
+
+/*-------------------------Text details-------------------------*/
+.text--dark{
+    font-size: 18px;
+    font-weight: 700;
+    color: hsl(229, 23%, 23%);
+}
+
+.age, .text--light{
+    font-weight: 400;
+    color: hsl(0, 0%, 59%);
+}
+
+/*-------------------------Footer-------------------------*/
+.attribution {
+    font-size: 11px; text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+/*-------------------------(1440px)-------------------------*/
+@media screen and (min-width: 1000px) {
+    .card-container{
+        width: 350px;
+    }
+}
